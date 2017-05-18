@@ -10,7 +10,7 @@ http.createServer(function (req , res) {
     //对请求对象的url进行解析 , 拿到?后面的查询参数 字符串
     var query = url.parse(req.url).query;
     var queryObj = qs.parse(query);
-    //接收数据的变量。。。
+    //接收数据的变量。。。...
     var result = "";
     http.get(queryObj.myUrl , function (request) {
        request.on("data" , function (data) {
